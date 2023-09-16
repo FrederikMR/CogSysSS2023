@@ -56,7 +56,7 @@ def parse_args():
     #Hyper-parameters
     parser.add_argument('--device', default='cpu', #'cuda:0'
                         type=str)
-    parser.add_argument('--epochs', default=100, #100000
+    parser.add_argument('--epochs', default=50000,
                         type=int)
     parser.add_argument('--batch_size', default=100,
                         type=int)
@@ -157,6 +157,8 @@ def main():
         running_loss_elbo = 0.0
         running_loss_rec = 0.0
         running_loss_kld = 0.0
+        if epoch % 100 == 0:
+            print(epoch)
         for x in trainloader:
             #x = x.to(args.device) #If DATA is not saved to device
             _, x_hat, mu, var, kld, rec_loss, elbo = model(x)
