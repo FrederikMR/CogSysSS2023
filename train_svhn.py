@@ -30,7 +30,7 @@ from VAE.SVHN import VAE_SVHN
 def parse_args():
     parser = argparse.ArgumentParser()
     # File-paths
-    parser.add_argument('--svhn_path', default="../Data/SVHN",
+    parser.add_argument('--svhn_path', default="../../Data/SVHN",
                         type=str)
     parser.add_argument('--save_model_path', default='models/svhn/vae_svhn', #'trained_models/surface_R2'
                         type=str)

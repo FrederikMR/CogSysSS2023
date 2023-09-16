@@ -30,7 +30,7 @@ from VAE.MNIST import VAE_MNIST
 def parse_args():
     parser = argparse.ArgumentParser()
     # File-paths
-    parser.add_argument('--mnist_path', default="../Data/MNIST",
+    parser.add_argument('--mnist_path', default="../../Data/MNIST",
                         type=str)
     parser.add_argument('--save_model_path', default='models/mnist/vae_mnist', #'trained_models/surface_R2'
                         type=str)

@@ -44,7 +44,7 @@ from VAE.Surface3D import VAE_3D
 def parse_args():
     parser = argparse.ArgumentParser()
     # File-paths
-    parser.add_argument('--data_path', default='../Data/paraboloid/paraboloid.csv', # 'Data/surface_R2.csv'
+    parser.add_argument('--data_path', default='../../Data/paraboloid/paraboloid.csv', # 'Data/surface_R2.csv'
                         type=str)
     parser.add_argument('--save_model_path', default='models/paraboloid/vae_paraboloid', #'trained_models/surface_R2'
                         type=str)

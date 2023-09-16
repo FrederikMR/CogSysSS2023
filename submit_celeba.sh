@@ -17,7 +17,7 @@ module swap cuda/8.0
 module swap cudnn/v7.0-prod-cuda8
 
 python3 train_celeba.py \
-    --celeba_path ../../Data/CelebA/celeba \
+    --celeba_path ../../Data/CelebA/ \
     --save_model_path models/celeba/vae_celeba \
     --model_number _1
     --save_hours 1 \

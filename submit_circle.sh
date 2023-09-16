@@ -17,7 +17,7 @@ module swap cuda/8.0
 module swap cudnn/v7.0-prod-cuda8
 
 python3 train_circle.py \
-    --mnist_path ../../Data/MNIST \
+    --mnist_path ../../Data/circle/circle.csv \
     --save_model_path models/circle/vae_circle \
     --model_number _1
     --save_hours 100 \

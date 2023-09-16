@@ -17,7 +17,7 @@ module swap cuda/8.0
 module swap cudnn/v7.0-prod-cuda8
 
 python3 train_paraboloid.py \
-    --mnist_path ../../Data/MNIST \
+    --mnist_path ../../Data/paraboloid/paraboloid.csv \
     --save_model_path models/paraboloid/vae_paraboloid \
     --model_number _1
     --save_hours 100 \
