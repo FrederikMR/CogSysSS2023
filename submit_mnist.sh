@@ -1,8 +1,8 @@
 #!/bin/sh
 #BSUB -q gpuv100
 #BSUB -gpu "num=1"
-#BSUB -J celeba
-#BSUB -n 1
+#BSUB -J mnist
+#BSUB -n 4
 #BSUB -W 24:00
 #BSUB -R "rusage[mem=32GB]"
 #BSUB -u s164222@student.dtu.dk
@@ -19,8 +19,8 @@ module swap cudnn/v7.0-prod-cuda8
 python3 train_mnist.py \
     --mnist_path ../../Data/MNIST \
     --save_model_path models/mnist/vae_mnist \
-    --model_number _1
-    --save_hours 100 \
+    --model_number _3
+    --save_hours 1 \
     --img_size 64 \
     --num_img 0.8 \
     --device cuda \

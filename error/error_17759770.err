@@ -1,0 +1,12 @@
+Traceback (most recent call last):
+  File "train_circle.py", line 207, in <module>
+    main()
+  File "train_circle.py", line 160, in main
+    for x in trainloader:
+  File "/zhome/77/8/118225/.local/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 435, in __next__
+    data = self._next_data()
+  File "/zhome/77/8/118225/.local/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 477, in _next_data
+    data = _utils.pin_memory.pin_memory(data)
+  File "/zhome/77/8/118225/.local/lib/python3.8/site-packages/torch/utils/data/_utils/pin_memory.py", line 47, in pin_memory
+    return data.pin_memory()
+KeyboardInterrupt

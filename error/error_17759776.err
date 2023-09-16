@@ -1,0 +1,8 @@
+Traceback (most recent call last):
+  File "train_mnist.py", line 169, in <module>
+    main()
+  File "train_mnist.py", line 124, in main
+    optimizer.zero_grad() #optimizer.zero_grad(set_to_none=True) #Based on performance tuning
+  File "/zhome/77/8/118225/.local/lib/python3.8/site-packages/torch/optim/optimizer.py", line 192, in zero_grad
+    p.grad.zero_()
+KeyboardInterrupt

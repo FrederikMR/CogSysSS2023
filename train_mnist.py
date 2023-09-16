@@ -84,7 +84,7 @@ def main():
         transforms.ToTensor(),
         transforms.Normalize((0.1307,), (0.3081,))
         ])
-    dataset = dset.MNIST(root=args.mnist_path, train=True, download=False, transform=transform)
+    dataset = dset.MNIST(root=args.mnist_path, train=True, download=True, transform=transform)
    
     dataset_subset = torch.utils.data.Subset(dataset, np.random.choice(len(dataset), int(args.num_img*len(dataset)), replace=False))
 

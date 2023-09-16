@@ -1,0 +1,9 @@
+usage: train_circle.py [-h] [--data_path DATA_PATH]
+                       [--save_model_path SAVE_MODEL_PATH]
+                       [--model_number MODEL_NUMBER] [--save_hours SAVE_HOURS]
+                       [--device DEVICE] [--epochs EPOCHS]
+                       [--batch_size BATCH_SIZE] [--lr LR] [--workers WORKERS]
+                       [--latent_dim LATENT_DIM] [--con_training CON_TRAINING]
+                       [--load_model_path LOAD_MODEL_PATH]
+train_circle.py: error: unrecognized arguments: --mnist_path ../../Data/circle/circle.csv
+/zhome/77/8/118225/.lsbatch/1694863880.17759768.shell: line 23: --save_hours: command not found
