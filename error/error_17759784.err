@@ -1,0 +1,26 @@
+Traceback (most recent call last):
+  File "train_mnist.py", line 169, in <module>
+    main()
+  File "train_mnist.py", line 120, in main
+    for x in trainloader:
+  File "/zhome/77/8/118225/.local/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 435, in __next__
+    data = self._next_data()
+  File "/zhome/77/8/118225/.local/lib/python3.8/site-packages/torch/utils/data/dataloader.py", line 475, in _next_data
+    data = self._dataset_fetcher.fetch(index)  # may raise StopIteration
+  File "/zhome/77/8/118225/.local/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 44, in fetch
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/zhome/77/8/118225/.local/lib/python3.8/site-packages/torch/utils/data/_utils/fetch.py", line 44, in <listcomp>
+    data = [self.dataset[idx] for idx in possibly_batched_index]
+  File "/zhome/77/8/118225/.local/lib/python3.8/site-packages/torch/utils/data/dataset.py", line 272, in __getitem__
+    return self.dataset[self.indices[idx]]
+  File "/zhome/77/8/118225/.local/lib/python3.8/site-packages/torchvision/datasets/mnist.py", line 106, in __getitem__
+    img = self.transform(img)
+  File "/zhome/77/8/118225/.local/lib/python3.8/site-packages/torchvision/transforms/transforms.py", line 67, in __call__
+    img = t(img)
+  File "/zhome/77/8/118225/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/zhome/77/8/118225/.local/lib/python3.8/site-packages/torchvision/transforms/transforms.py", line 226, in forward
+    return F.normalize(tensor, self.mean, self.std, self.inplace)
+  File "/zhome/77/8/118225/.local/lib/python3.8/site-packages/torchvision/transforms/functional.py", line 284, in normalize
+    tensor.sub_(mean).div_(std)
+KeyboardInterrupt

@@ -1,0 +1,10 @@
+Traceback (most recent call last):
+  File "train_mnist.py", line 169, in <module>
+    main()
+  File "train_mnist.py", line 125, in main
+    elbo.backward()
+  File "/zhome/77/8/118225/.local/lib/python3.8/site-packages/torch/tensor.py", line 221, in backward
+    torch.autograd.backward(self, gradient, retain_graph, create_graph)
+  File "/zhome/77/8/118225/.local/lib/python3.8/site-packages/torch/autograd/__init__.py", line 130, in backward
+    Variable._execution_engine.run_backward(
+KeyboardInterrupt

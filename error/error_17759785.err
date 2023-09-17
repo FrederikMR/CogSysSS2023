@@ -1,0 +1,18 @@
+Traceback (most recent call last):
+  File "train_mnist.py", line 169, in <module>
+    main()
+  File "train_mnist.py", line 123, in main
+    _, x_hat, mu, var, kld, rec_loss, elbo = model(dat)
+  File "/zhome/77/8/118225/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/zhome/77/8/118225/Desktop/CogSysSS2023/CogSysSS2023/VAE/MNIST.py", line 170, in forward
+    x_hat = self.decoder(z)
+  File "/zhome/77/8/118225/Desktop/CogSysSS2023/CogSysSS2023/VAE/MNIST.py", line 130, in decoder
+    x4 = self.ELU(self.g_batch4(self.g_tcon3(x3)))
+  File "/zhome/77/8/118225/.local/lib/python3.8/site-packages/torch/nn/modules/module.py", line 727, in _call_impl
+    result = self.forward(*input, **kwargs)
+  File "/zhome/77/8/118225/.local/lib/python3.8/site-packages/torch/nn/modules/batchnorm.py", line 131, in forward
+    return F.batch_norm(
+  File "/zhome/77/8/118225/.local/lib/python3.8/site-packages/torch/nn/functional.py", line 2056, in batch_norm
+    return torch.batch_norm(
+KeyboardInterrupt
